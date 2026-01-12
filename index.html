@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="icon" type="image/png"/ sizes="32x32"
+          <link rel="icon" type="image/png"/ sizes="32x32"
     href="../assets/images/favicon-32x32.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,20 +16,21 @@
     <title>Frontend quiz app</title>
   </head>
   <body>
-    <div class="main-container">
+  <div class="main-container">
       <!--========HEADER==========-->
 
       <header class="theme">
-        <div class="subject">
+        <div class="subject hidden">
           <div class="subject-img-container">
-            <img
-              src="./assets/images/icon-accessibility.svg"
+            <img class="result-subject-img"
+              src=""
               alt=""
               width="40"
               height="40"
             />
+             <p class="subject-text reset4"></p>
           </div>
-          <p class="subject-text reset4">Accessibility</p>
+         
         </div>
 
         <div class="dark-white-style">
@@ -57,7 +57,7 @@
 
       <!----------- START MENU--------------->
 
-      <section class="screen screen-select hidden">
+      <section class="screen screen-select active">
         <!--========WELCOME==========-->
         <section class="select-welcome">
           <h1 class="select-welcome-h1 preset2-light-mobile">Welcome to the</h1>
@@ -73,38 +73,38 @@
         <!--========SELECT-SUBJECTS==========-->
 
         <section class="select-subject-list">
-          <label for="html" class="select-subject-label preset4-mobile">
+          <label for="HTML" class="select-subject-label preset4-mobile">
             <div class="select-subject-img-container html-card">
               <img src="../assets/images/icon-html.svg" alt="HTML" />
-            </div>
+          </div>
             HTML
-            <input class="select-subject-item" id="html" type="checkbox" />
+            <input class="select-subject-item" id="HTML" type="radio" />
           </label>
 
-          <input class="select-subject-item" id="css" type="checkbox" />
+          
 
-          <label for="css" class="select-subject-label preset4-mobile">
+          <label for="CSS" class="select-subject-label preset4-mobile">
             <div class="select-subject-img-container html-css">
               <img src="../assets/images/icon-css.svg" alt="CSS" />
             </div>
             CSS
+            <input class="select-subject-item" id="CSS" type="radio" />
+
+            
           </label>
 
-          <input class="select-subject-item" id="javascript" type="checkbox" />
+         
 
-          <label for="javascript" class="select-subject-label preset4-mobile">
+          <label for="JavaScript" class="select-subject-label preset4-mobile">
             <div class="select-subject-img-container html-js">
-              <img src="../assets/images/icon-js.svg" alt="Javascript" />
+              <img src="../assets/images/icon-js.svg" alt="JavaScript" />
             </div>
-            Javascript
+            JavaScript
+             <input class="select-subject-item" id="JavaScript" type="radio" />
           </label>
-          <input
-            class="select-subject-item"
-            id="accessibility"
-            type="checkbox"
-          />
+       
           <label
-            for="accessibility"
+            for="Accessibility"
             class="select-subject-label preset4-mobile"
           >
             <div class="select-subject-img-container html-access">
@@ -114,20 +114,24 @@
               />
             </div>
             Accessibility
+               <input
+            class="select-subject-item"
+            id="Accessibility"
+            type="radio"
+          />
           </label>
         </section>
       </section>
 
       <!------- ЭКРАН ВОПРОСОВ ----------->
-      <section class="screen screen-question active">
+      <section class="screen screen-question hidden">
         <div class="question-title">
           <h2 class="question-counter preset5-mobile">
-            Question <span id="current-question">1</span> of
+            Question <span id="current-question"></span> of
             <span id="total-questions">10</span>
           </h2>
           <p class="question-content preset3-mobile">
-            Which of these color contrast ratios defines the minimum WCAG 2.1
-            Level AA requirement for normal text?
+            
           </p>
           <div class="quiz-progress__track">
             <div class="quiz-progress__bar" id="progress-bar"></div>
@@ -136,16 +140,15 @@
         <ul class="answers">
           <li class="answer-item">
             <!---------------------item-A----------------------------------------->
-            <input class="select-answer-item" id="letter-a" type="checkbox" />
 
-            <!-- <div class="letter-and-question"> -->
-            <label for="letter-a" class="select-answer-label">
+            <input class="select-answer-item" id="letter-a" type="radio" name="answer"/>
+
+              <label for="letter-a" class="select-answer-label">
               <span class="answer-letter preset4-mobile">A</span>
-              <p class="answer-content">4.5 : 1</p>
-              <!-- </div> -->
-              <img
-                src="./assets/images/icon-correct.svg"
-                alt="Correct answer"
+              <p class="answer-content answer-A"></p>
+                <img
+                src=""
+                alt=""
                 class="answer-icon"
               />
             </label>
@@ -153,61 +156,78 @@
 
           <!---------------------item-B----------------------------------------->
           <li class="answer-item">
-            <input class="select-answer-item" id="letter-b" type="checkbox" />
+            <input class="select-answer-item" id="letter-b" type="radio" name="answer" />
             <label for="letter-b" class="select-answer-label">
               <span class="answer-letter preset4-mobile">B</span>
-              <p class="answer-content">3 : 1</p>
+              <p class="answer-content answer-B"></p>
               <img
-                src="./assets/images/icon-error.svg"
-                alt="Wrong answer"
+                src=""
+                alt=""
                 class="answer-icon"
               />
             </label>
           </li>
           <!---------------------item-С----------------------------------------->
           <li class="answer-item">
-            <input class="select-answer-item" id="letter-c" type="checkbox" />
+            <input class="select-answer-item" id="letter-c" type="radio" name="answer"/>
             <label for="letter-c" class="select-answer-label">
               <span class="answer-letter preset4-mobile">C</span>
 
-              <p class="answer-content">2.5 : 1</p>
+              <p class="answer-content answer-C"></p>
               <img src="" alt="" class="answer-icon" />
             </label>
           </li>
           <!---------------------item-D----------------------------------------->
           <li class="answer-item">
-            <input class="select-answer-item" id="letter-d" type="checkbox" />
+            <input class="select-answer-item" id="letter-d" type="radio" name="answer"/>
             <label for="letter-d" class="select-answer-label">
               <span class="answer-letter preset4-mobile">D</span>
 
-              <p class="answer-content">5 : 1</p>
+              <p class="answer-content answer-D"></p>
               <img src="" alt="" class="answer-icon" />
             </label>
           </li>
         </ul>
         <button class="submit-btn">Next Question</button>
+
+        <div class="no-answer is-visible">
+          <img
+                src="/assets/images/icon-incorrect.svg"
+                alt="No answer"
+                class="answer-icon-message"
+              />
+        <p class="no-answer-par preset5-regular">Please select an answer</p>
+      </div>
       </section>
 
       <!------- ЭКРАН РЕЗУЛЬТАТА ----------->
       <section class="screen screen-result hidden">
-        <h3 class="screen-result-title">
-          Quiz completed <span class="screen-result-span">You scored...</span>
+        <h3 class="screen-result-title preset2-light-mobile">
+          Quiz completed <span class="screen-result-span preset2-medium-mobile">You scored...</span>
         </h3>
         <div class="result-total">
-          <div class="subject">
-            <img
-              src="/assets/images/icon-accessibility.svg"
-              alt="Accessibility"
-            />
-            <p class="result-subject-text">Accessibility</p>
-          </div>
-          <p class="result-total-questions">
+          <div class="subject result-subject">
+          <div class="subject-img-container ">
+            <img class="result-subject-img"
+              src=""
+              alt=""
+              width="40"
+              height="40"
+             />
+              <p class="result-subject-text "></p>
+            </div>
+          
+           </div>
+          <p class="result-total-questions preset1-mobile">
             8
-            <!-- Question <span id="current-question">1</span> -->
-            out of <span id="result-total-questions">10</span>
           </p>
-          <button class="result-btn">Play Again</button>
+          <div class="current-question">out of
+            <span id="result-total-questions">10</span>
+          </div>
+          <!-- Question <span id="current-question">1</span> -->
+             
         </div>
+        <button class="result-btn submit-btn">Play Again</button>
       </section>
     </div>
     <script src="./assets/js/main.js" type="module"></script>
