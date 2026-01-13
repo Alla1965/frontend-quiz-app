@@ -20,22 +20,22 @@ import { correctCount  } from "./quiz.js";
   // Изменение заголовка предмета викторины перед счетчиком правильных вопросов
  
   if (subject==="HTML"){
-    resultImg.src = "/assets/images/icon-html.svg";
+    resultImg.src = "assets/images/icon-html.svg";
     resultImg.alt = "HTML";
     resultText.textContent = "HTML";
      }
     if (subject==="CSS"){
-    resultImg.src = "/assets/images/icon-css.svg";
+    resultImg.src = "assets/images/icon-css.svg";
     resultImg.alt = "CSS";
     resultText.textContent = "CSS";
   }
       if (subject==="JavaScript"){
-    resultImg.src = "/assets/images/icon-js.svg";
+    resultImg.src = "assets/images/icon-js.svg";
     resultImg.alt = "JavaScript";
     resultText.textContent = "JavaScript";
   }
        if (subject==="Accessibility"){
-    resultImg.src = "/assets/images/icon-accessibility.svg";
+    resultImg.src = "assets/images/icon-accessibility.svg";
     resultImg.alt = "Accessibility";
     resultText.textContent = "Accessibility";
   }

@@ -64,11 +64,11 @@ export function answerChoice(
      //Проверка правильности ответа
       if (text === correctAnswer) {
         incrementCorrectCount(); // 🔥 +1 правильный ответ
-        icon.src = "/assets/images/icon-correct.svg";
+        icon.src = "assets/images/icon-correct.svg";
         icon.alt = "Правильный ответ";
         item.classList.add("correct");
       } else {
-        icon.src = "/assets/images/icon-error.svg";
+        icon.src = "assets/images/icon-error.svg";
         icon.alt = "Неправильный ответ";
         item.classList.add("wrong");
       }

@@ -14,22 +14,22 @@ const imgSubject = document.querySelector(".subject-img-container img");
 // Изменение заголовка предмета викторины 
  
   if (subject==="HTML"){
-    imgSubject.src = "/assets/images/icon-html.svg";
+    imgSubject.src = "assets/images/icon-html.svg";
     imgSubject.alt = "HTML";
     textSubject.textContent = "HTML";
   }
     if (subject==="CSS"){
-    imgSubject.src = "/assets/images/icon-css.svg";
+    imgSubject.src = "assets/images/icon-css.svg";
     imgSubject.alt = "CSS";
     textSubject.textContent = "CSS";
   }
       if (subject==="JavaScript"){
-    imgSubject.src = "/assets/images/icon-js.svg";
+    imgSubject.src = "assets/images/icon-js.svg";
     imgSubject.alt = "JavaScript";
     textSubject.textContent = "JavaScript";
   }
        if (subject==="Accessibility"){
-    imgSubject.src = "/assets/images/icon-accessibility.svg";
+    imgSubject.src = "assets/images/icon-accessibility.svg";
     imgSubject.alt = "Accessibility";
     textSubject.textContent = "Accessibility";
   }
