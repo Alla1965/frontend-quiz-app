@@ -1,6 +1,5 @@
 import { answerChoice } from "./answerChoice.js";
 import { quizScreen, screenResult } from "./quiz.js";
-// import { getAnswered, setAnswered } from "./quiz.js";
 
 export function fillInDOM(subjectQuiz, currentSubject, currentQuestionIndex) {
 
