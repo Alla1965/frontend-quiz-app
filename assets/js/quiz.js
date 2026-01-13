@@ -1,5 +1,5 @@
 // quiz.js
-import { fillInDOM } from "./fillinDOM.js";
+import { fillInDOM } from "./fillInDOM.js";
 import { startQuiz } from "./startQuiz.js";
 import { initResult } from "./initResult.js";
 
